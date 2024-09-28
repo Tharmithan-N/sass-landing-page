@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-left: 115px;
+  padding-right: 115px;
+  padding-top: 30px;
 }
 
 code {
@@ -16,3 +19,15 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hovered-color{
+  color: linear-gradient(to right, #AE67FA, #F49867);
+}
+
+.hovered-background-color {
+  background-color: linear-gradient(to right, #AE67FA, #F49867);
+}
+
+.text-color {
+  color:'red'; 
+}

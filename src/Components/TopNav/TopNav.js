@@ -1,9 +1,10 @@
 import React from "react";
+import '../../index.css';
 
 const TopNav = () => {
   return (
-    <div>
-      <div>
+    <div className="flex justify-between items-center">
+      <div className="flex items-center">
         <div>
           <svg
             width="30"
@@ -50,16 +51,27 @@ const TopNav = () => {
             </defs>
           </svg>
         </div>
-        <div>Brands.io</div>
+        <div className="ml-[15px] text-#3E4581 text-[18px] font-[600]">
+          Brands.io
+        </div>
       </div>
-      <div>
-        <div className="text-green-600">Home</div>
-        <div>About Us</div>
-        <div>Services</div>
-        <div>Contact Us</div>
+      <div className="flex gap-[45px]">
+        <div className="text-[#3E4581] cursor-pointer hover:bg-gradient-to-r hover:from-[#AE67FA] hover:to-[#F49867] hover:bg-clip-text hover:text-transparent rounded-[5px] font-[500]">
+          Home
+        </div>
+        <div className="text-[#3E4581] cursor-pointer hover:bg-gradient-to-r hover:from-[#AE67FA] hover:to-[#F49867] hover:bg-clip-text hover:text-transparent rounded-[5px] font-[500]">
+          About Us
+        </div>
+        <div className="text-[#3E4581] cursor-pointer hover:bg-gradient-to-r hover:from-[#AE67FA] hover:to-[#F49867] hover:bg-clip-text hover:text-transparent rounded-[5px] font-[500]">
+          Services
+        </div>
+        <div className="text-[#3E4581] cursor-pointer hover:bg-gradient-to-r hover:from-[#AE67FA] hover:to-[#F49867] hover:bg-clip-text hover:text-transparent rounded-[5px] font-[500]">
+          Contact Us
+        </div>
       </div>
-      <div>
-        <div>Login</div>
+
+      <div className="flex items-center justify-center py-[17px] px-[32px] bg-gradient-to-r from-[#AE67FA] to-[#F49867] rounded-[5px]">
+        <div className="text-white">Login</div>
       </div>
     </div>
   );
