@@ -70,8 +70,8 @@ const TopNav = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center py-[17px] px-[32px] bg-gradient-to-r from-[#AE67FA] to-[#F49867] rounded-[5px]">
-        <div className="text-white">Login</div>
+      <div className="flex items-center justify-center py-[17px] px-[32px] bg-gradient-to-r from-[#AE67FA] to-[#F49867] rounded-[5px] hover:animate-gradientMove cursor-pointer">
+        <div className="text-white cursor-pointer">Login</div>
       </div>
     </div>
   );
