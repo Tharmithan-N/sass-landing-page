@@ -1,10 +1,14 @@
 import React from "react";
 import profile from "../assets/images/profile.png";
+import Card1 from "./card1";
+import Card2 from "./card2";
+import Card3 from "./card3";
+import Card4 from "./card4";
 
 const Profile = () => {
     return (
       <div>
-        <div className="absolute top-[190px] left-[800px]">
+        <div className="absolute top-[190px] left-[800px] z-10">
           <svg
             width="314"
             height="344"
@@ -99,9 +103,17 @@ const Profile = () => {
             </defs>
           </svg>
         </div>
-        <div className="absolute left-[960px] top-[180px]">
+        <div className="absolute left-[960px] top-[180px] z-10">
           <img src={profile} />
-        </div>
+            </div>
+            <div className="absolute left-[1000px] top-[240px] z-10">
+                <Card1 />
+            </div>
+            <div className="absolute top-[450px] left-[650px] z-0">
+                <Card2/>
+            </div>
+            <div className="absolute top-[550px] left-[1000px] z-10"><Card3 /></div>
+            <div className="absolute top-[670px] left-[1000px] z-9"><Card4/></div>
       </div>
     );
 }
